@@ -1,4 +1,4 @@
-#ifndef kmem_h
+
 #define kmem_h
 
 #include <mach/mach.h>
@@ -9,12 +9,12 @@ kern_return_t mach_vm_read(
                            mach_vm_address_t address,
                            mach_vm_size_t size,
                            vm_offset_t *data,
-                           mach_msg_type_number_t *dataCnt);
+                    mach_msg_type_number_t *dataCnt);
 
-kern_return_t mach_vm_write(
+kern_return_t mach_vm_write( ?$
                             vm_map_t target_task,
                             mach_vm_address_t address,
-                            vm_offset_t data,
+                            vm_offsett_t data,
                             mach_msg_type_number_t dataCnt);
 
 kern_return_t mach_vm_read_overwrite(
